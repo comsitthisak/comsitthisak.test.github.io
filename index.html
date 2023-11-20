@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+   <title>The Personnel Testing System - ระบบทดสอบและคัดเลือกบุคลากร พีทีเอส</title>
+   <meta content="" name="">
+   <meta content="" name="">
+
+   <!-- Favicons -->
+   <link href="assets/img/PTSfavicon.png" rel="icon">
+
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400&display=swap" rel="stylesheet">
+
+   <!-- Bootstrap Icons -->
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"> -->
+
+   <!-- Vendor CSS Files -->
+   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+   <!-- <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"> -->
+   <!-- <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"> -->
+   <!-- <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet"> -->
+   <!-- <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+
+   <!-- Template Main CSS File -->
+   <link href="assets/css/style.css" rel="stylesheet">
+
+   <!-- =======================================================
+  * Template Name: Arsha
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+   <!-- ======= Header ======= -->
+   <header id="header" class="fixed-top ">
+      <div class="container d-flex align-items-center">
+         <a class="logo me-auto" href=""><img class="" src="assets/img/Logo2019.png" width="100%"></a>
+         <nav id="navbar" class="navbar">
+            <ul>
+               <li><a class="nav-link scrollto active" href="#home">Home</a></li>
+               <li><a class="nav-link scrollto active" href="#whypts">Why PTS</a></li>
+               <!-- <li class="dropdown"><a class="nav-link scrollto" href="#solution"><span>Recruitment Solution</span>
+                     <i class="bi bi-chevron-down"></i></a>
+                  <ul>
+                     <li><a class="nav-link scrollto" href="#introduction">Introduction</a></li>
+                     <li><a class="nav-link scrollto" href="#ptscenter">PTS Testing Center</a></li>
+                     <li><a class="nav-link scrollto" href="#howtouse">How To Use</a></li>
+                  </ul>
+               </li> -->
+               <li class="dropdown"><a class="nav-link scrollto" href="#listoftests"><span>Test List</span><i
+                        class="bi bi-chevron-down"></i></a>
+                  <ul>
+                     <li><a onclick="showModalTestList('JPS')">Job-Preferences Scanner</a></li>
+                     <li><a onclick="showModalTestList('PJT')">Personality and Job-Preferences Test</a></li>
+                     <li><a onclick="showModalTestList('')">General Mental Ability Test</a></li>
+                     <li><a onclick="showModalTestList('')">Gamified Adaptive Cognitive Aptitudes Test</a></li>
+                     <li><a onclick="showModalTestList('SRT')">Supervisory Readiness Test</a></li>
+                     <li><a onclick="showModalTestList('MPT')">Managerial Personality Test</a></li>
+                     <li><a onclick="showModalTestList('MRT')">Managerial Readiness Test</a></li>
+                     <li><a onclick="showModalTestList('MCT')">Managerial Competency Test</a></li>
+                     <li><a onclick="showModalTestList('CAT')">Cognitive Aptitudes Test</a></li>
+                     <li><a onclick="showModalTestList('')">Advanced Cognitives Aptitude Test</a></li>
+                     <li><a onclick="showModalTestList('SSJ')">Sales and Service Job-Fit Test</a></li>
+                     <li><a onclick="showModalTestList('CCJ')">Call Center Job-Fit Test</a></li>
+                  </ul>
+               </li>
+               <!-- <li class="dropdown"><a class="nav-link scrollto" href=""><span>Training Services</span> <i
+                        class="bi bi-chevron-down"></i></a>
+                  <ul>
+                     <li><a href="#">Introduction</a></li>
+                     <li class="dropdown"><a href="#"><span>Training Courses</span> <i
+                              class="bi bi-chevron-right"></i></a>
+                        <ul>
+                           <li><a href="#">Miracle Teamwork</a></li>
+                           <li><a href="#">Effective Supervisory Leadership Techniques </a></li>
+                           <li><a href="#">Training Course Registration</a></li>
+                        </ul>
+                  </ul>
+               </li> -->
+               <!-- <li class="dropdown"><a class="nav-link scrollto" href="#assessmentTools"><span>Assessment Tools</span>
+                     <i class="bi bi-chevron-down"></i></a>
+                  <ul>
+                     <li><a href="#">180° / 360° Multi-Rater Rating</a></li>
+                     <li><a href="#">EBI: Evidence-Based Interview</a></li>
+                     <li><a href="#">ABA: Activity-Based Assessment</a></li>
+                     <li><a href="#">Employee Engagement</a></li>
+                  </ul>
+               </li> -->
+               <li><a class="nav-link scrollto" href="#development">Development</a></li>
+               <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
+               <li><a class="nav-link scrollto" href="#services">Services</a></li>
+               <li><a class="nav-link scrollto" href="#team">About</a></li>
+               <!-- <li class="dropdown"><a class="nav-link scrollto" href="#services"><span>About</span> <i
+                        class="bi bi-chevron-down"></i></a>
+                  <ul>
+                     <li><a href="#">About PTS</a></li>
+                     <li><a href="#">About Professor</a></li>
+                  </ul>
+               </li> -->
+               <!-- <li><a class="nav-link scrollto" href="#about">Why PTS Tests</a></li> -->
+               <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+         </nav><!-- .navbar -->
+
+      </div>
+   </header><!-- End Header -->
+
+   <!-- ======= Home Section ======= -->
+   <section id="home" class="d-flex align-items-center">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+               data-aos-delay="200">
+               <h1 data-aos="fade-right"
+                  style="font-size:32pt; font-family:'roman'; color:#00244d;text-shadow: 1.3px 1.3px 2px #fff;">
+                  <i>The PTS <span style="color:#a50000;"> <br>
+                        People Assessment and <br> Development System</span></i>
+               </h1>
+               <h2 style="font-size:14pt;" data-aos="fade-left">
+                  <i>ระบบประเมินและพัฒนาบุคลากร ที่มีการบอกต่อมากที่สุดในปัจจุบัน</i>
+               </h2>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 home-img" data-aos="zoom-in" data-aos-delay="200">
+               <img src="assets/img/pts10.png" class="img-fluid animated" width="90%">
+            </div>
+         </div>
+      </div>
+
+   </section><!-- End Home -->
+
+   <!-- ======= Clients Section ======= -->
+   <section id="clients" class="clients container-fluid">
+      <div class="row" data-aos="zoom-in">
+         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/1.png" alt="" onclick="showModalProduct('Psychometrics1')">
+         </div>
+         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/2.png" alt="" onclick="showModalProduct('ABA1')">
+         </div>
+         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/3.png" alt="" onclick="showModalProduct('Structural')">
+         </div>
+         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/4.png" alt="" onclick="showModalProduct('360')">
+         </div>
+         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/5.png" alt="" onclick="showModalProduct('none')">
+         </div>
+         <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/6.png" alt="" onclick="showModalProduct('Engagement')">
+         </div>
+      </div>
+   </section>
+   <!-- End Cliens Section -->
+
+   <main id="main">
+      <!-- ======= whypts Us Section ======= -->
+      <section id="whypts" class="container" data-aos="fade-up">
+         <div class="section-title">
+            <h2>Why PTS</h2>
+         </div>
+         <div class="row content mt-5">
+            <div class="col-lg-7" data-aos="fade-right">
+               <img class="rounded-4" src="assets/img/pts-products/whypts_1.png" alt="" width="100%">
+            </div>
+            <div class="col-lg-5 pt-lg-5" data-aos="fade-left">
+               <h3 style="line-height:35pt; letter-spacing:1px;">
+                  <i>PTS matches each candidate's competency profile to the requirements of every job in your
+                     organization</i>
+               </h3>
+            </div>
+         </div>
+         <br>
+         <br>
+         <div class="row content mt-5">
+            <div class="col-lg-6">
+               <h3 style="line-height:30pt; letter-spacing:1px;" class="text-center" data-aos="fade-up">
+                  <i>7 Important Reasons for Choosing PTS:</i>
+               </h3>
+               <img class="rounded-4 mt-2" src="assets/img/pts-products/whypts21.png" alt="" width="100%"
+                  data-aos="fade-right">
+            </div>
+            <div class="col-lg-6">
+               <img class="rounded-4" src="assets/img/pts-products/whypts22.png" alt="" width="100%"
+                  data-aos="fade-left">
+            </div>
+         </div>
+      </section><!-- End whypts Us Section -->
+
+      <!-- ======= List of Tests Us Section ======= -->
+      <section id="listoftests" class="container-fluid section-bg" data-aos="fade-up">
+         <style>
+            .boxTestList {
+               position: relative;
+               border: 0;
+               /* box-shadow: 2px 2px 2px #d8d8d8; */
+               padding: 15px;
+               margin-bottom: 10px;
+               font-size: 12pt;
+               border-radius: 5px;
+               background: #fff;
+               cursor: pointer;
+               transition: 0.2s;
+            }
+
+            .boxTestList:hover {
+               /* background: #cce6ff; */
+               font-weight: bold;
+               box-shadow: 5px 5px 5px #e2e2e2;
+               transform: translateX(5px);
+            }
+
+            #listoftests .col-lg-6 p {
+               margin-bottom: 10px;
+               text-align: center;
+               font-weight: bold;
+               color: #345a3f;
+            }
+         </style>
+         <div class="container">
+            <div class="section-title">
+               <h2>List of Tests</h2>
+            </div>
+            <p>ระบบทดสอบบุคลากรพีทีเอส มีชุดแบบทดสอบทางจิตวิทยาและความสามารถ ซึ่งสามารถวัดผลได้ครอบคลุมตำแหน่งงานต่าง
+               ๆ ดังนี้</p>
+            <div class="row content gy-2">
+               <div class="col-lg-6 mb-lg-3" data-aos="fade-right">
+                  <p>สำหรับระดับปฏิบัติการ</p>
+                  <div class="boxTestList" onclick="showModalTestList('JPS')">1. Job-Preferences Scanner</div>
+                  <div class="boxTestList" onclick="showModalTestList('PJT')">2. Personality and Job-Preferences Test
+                  </div>
+                  <div class="boxTestList" onclick="showModalTestList('')">3. General Mental Ability Test</div>
+                  <div class="boxTestList" onclick="showModalTestList('')">4. Gamified Adaptive Cognitive Aptitudes Test
+                  </div>
+               </div>
+               <div class="col-lg-6 mb-lg-3" data-aos="fade-left">
+                  <p>สำหรับระดับหัวหน้างานและผู้บริหาร</p>
+                  <div class="boxTestList" onclick="showModalTestList('SRT')">1. Supervisory Readiness Test</div>
+                  <div class="boxTestList" onclick="showModalTestList('MPT')">2. Managerial Personality Test</div>
+                  <div class="boxTestList" onclick="showModalTestList('MRT')">3. Managerial Readiness Test</div>
+                  <div class="boxTestList" onclick="showModalTestList('MCT')">4. Managerial Competency Test</div>
+               </div>
+               <div class="col-lg-6 mb-lg-3" data-aos="fade-right">
+                  <p>สำหรับตำแหน่งที่ต้องใช้ความคิดวิเคราะห์</p>
+                  <div class="boxTestList" onclick="showModalTestList('CAT')">1. Cognitive Aptitudes Test</div>
+                  <div class="boxTestList" onclick="showModalTestList('')">2. Advanced Cognitives Aptitude Test</div>
+               </div>
+               <div class="col-lg-6 mb-lg-3" data-aos="fade-left">
+                  <p>สำหรับตำแหน่งงานขายและบริการ</p>
+                  <div class="boxTestList" onclick="showModalTestList('SSJ')">1. Sales and Service Job-Fit Test</div>
+                  <div class="boxTestList" onclick="showModalTestList('CCJCAT')">2. Call Center Job-Fit Test</div>
+               </div>
+               <div style="letter-spacing:1px; color:red;" data-aos="fade-up">
+                  <i><b>นอกจากนี้ พีทีเอสยังสามารถสร้างข้อสอบขึ้นใหม่ตาม Core Values และ Competencies
+                        ขององค์กรได้อีกด้วย</b></i>
+               </div>
+            </div>
+         </div>
+      </section><!-- End List of Tests Us Section -->
+
+      <!-- ======= assessmentTools Section ======= -->
+      <!-- <section id="assessmentTools" class="assessment">
+         <div class="container" data-aos="fade-up">
+            <div class="section-title">
+               <h2>Assessment Tools</h2>
+            </div>
+            <div class="row text-center">
+               <div class="col-lg-3" data-aos="zoom-in"><img src="assets/img/ass-360.png" alt="" width="100%"></div>
+               <div class="col-lg-3" data-aos="zoom-in"><img src="assets/img/ass-ebi.png" alt="" width="100%"></div>
+               <div class="col-lg-3" data-aos="zoom-in"><img src="assets/img/ass-aba.png" alt="" width="100%"></div>
+               <div class="col-lg-3" data-aos="zoom-in"><img src="assets/img/ass-engagement.png" alt="" width="100%">
+               </div>
+            </div>
+         </div>
+      </section> -->
+      <!-- End assessmentTools Section -->
+
+      <!-- ======= development Section ======= -->
+      <section id="development" class="container-fluid">
+         <style>
+            #development .row .col-lg-4 .nav-link {
+               background-color: #e9eee9;
+               padding: 30px 0;
+               border-radius: 5px;
+               text-align: center;
+               cursor: pointer;
+               font-size: 13pt;
+               font-weight: bold;
+               color: #1d6630;
+               transition: 0.2s;
+            }
+
+            #development .row .col-lg-4 .nav-link:hover {
+               transform: translateY(-5px);
+            }
+
+            #development span {
+               cursor: pointer;
+               color: red;
+               transition: .2s;
+            }
+
+            #development span:hover {
+               font-weight: bold;
+               color: #1d6630;
+            }
+
+            #development section {
+               padding-bottom: 0;
+            }
+         </style>
+         <div class="container" data-aos="fade-up">
+            <div class="section-title">
+               <h2>Development</h2>
+            </div>
+            <p>3 แนวทางของ PTS ในการพัฒนาบุคลากร</p>
+            <div class="row g-3">
+               <div class="col-lg-4">
+                  <a class="nav-link scrollto" href="#ABC">Assessment-Based Coaching</a>
+               </div>
+               <div class="col-lg-4">
+                  <a class="nav-link scrollto" href="#ELC">Experiential Learning Courses</a>
+               </div>
+               <div class="col-lg-4">
+                  <a class="nav-link scrollto" href="#VSC">VDO Self-Learning Courses</a>
+               </div>
+            </div>
+
+            <section id="ABC" class="mt-4 pt-3" data-aos="fade-up" data-aos-delay="100">
+               <h3>Assessment-Based Coaching</h3>
+               <p>โค้ชผู้ทรงคุณวุฒิของ PTS ช่วยให้ผู้รับการประเมิน พัฒนาตนเองอย่าง ตรงจุด
+                  ที่ควรและอยากจะพัฒนาของแต่ละคน ด้วยการ...</p>
+               <ol>
+                  <li>อธิบายให้ผู้รับการประเมินด้วยแต่ละเครื่องมือของ PTS เช่นการทดสอบ, ABA, หรือ 360-
+                     Feedback แต่ละคน เข้าใจ และเกิดความ ยอมรับ ในผลของการประเมิน ซึ่งเป็นเงื่อนไขขั้นต้น
+                     ของการพัฒนาตนเอง
+                  </li>
+                  <li>พูดคุยให้ผู้รับ Feedback แต่ละคน “มองเห็น” แนวทางการพัฒนาตนเอง ทั้งที่เป็น จุดแข็ง และ
+                     จุดอ่อน ของตนเอง
+                  </li>
+                  <li>ช่วยให้ผู้รับผู้รับการประเมินแต่ละคนแปลงความ ตั้งใจที่จะพัฒนาของตนเอง
+                     เป็นแผนการปฏิบัติการและนำไปสู่การปฏิบัติอย่างจริงจัง ให้ เกิดผลตามที่ตั้งใจไว้</li>
+               </ol>
+            </section>
+
+            <section id="ELC" class="pt-3" data-aos="fade-up" data-aos-delay="200">
+               <h3>Experiential Learning Courses</h3>
+               <p>หลักสูตรการเรียนรู้แบบ Active Learning ที่เชื่อมโยงกับประสบการณ์การทำงานจริงของผู้เรียนแต่ละคน
+                  กิจกรรมการเรียนรู้ประกอบด้วยการทำแบบสำรวจตนเอง วิเคราะห์การทำกิจกรรม
+                  กลุ่ม การสรุปบทเรียน การวางแผนนำไปปฏิบัติจริง ตามวงจร P-D-C-L (Plan-Do-Check-Learn)
+               </p>
+               <ul style="list-style-type: none;">
+                  <div class="mb-2">ปัจจุบัน มี 4 หลักสูตร คือ</div>
+                  <li><span>A. Supervisory Skills</span></li>
+                  <li><span>B. Synergistic Team</span></li>
+                  <li><span>C. Managerial Leadership</span></li>
+                  <li><span>D. High Performance Team</span></li>
+               </ul>
+            </section>
+
+            <section id="VSC" class="pt-3" data-aos="fade-up" data-aos-delay="300">
+               <h3>VDO Self-Learning Courses</h3>
+               <p>หลักสูตรการเรียนรู้แบบ Active Learning ผ่าน VDO
+                  ที่เชื่อมโยงกับประสบการณ์การทำงานจริงของผู้เรียนแต่ละคน กิจกรรมการเรียนรู้ประกอบด้วยการทำ Pre-Learning
+                  และ Post-Learning Quizzes การทำแบบสำรวจตนเอง การฟังการบรรยายพร้อม Animated Slide การจดโน้ตใน Learning
+                  Sheets และการจัดทำปณิธานแบบ Continue-Start-Stop หลังการเรียนรู้ในแต่ละตอน</p>
+               <ul style="list-style-type: none;">
+                  <div class="mb-2">ปัจจุบัน มี VDO 3 ชุด แต่ละชุดมี 5 ตอน ดังนี้</div>
+                  <li><span onclick="showModalVdoDev(1)">ชุดที่ 1: Managerial Leadership</span></li>
+                  <li><span onclick="showModalVdoDev(2)">ชุดที่ 2: Managerial Effectiveness</span></li>
+                  <li><span onclick="showModalVdoDev(3)">ชุดที่ 3: Supervisory Effectiveness</span></li>
+               </ul>
+            </section>
+         </div>
+      </section><!-- End development Section -->
+
+      <!-- ======= Frequently Asked Questions Section ======= -->
+      <section id="faq" class="faq section-bg">
+         <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+               <h2>Frequently Asked Questions</h2>
+               <p>รวมคำถามและคำตอบเกี่ยวกับแบบทดสอบบุคลากรของพีทีเอสที่มีบริการ ที่มาของแบบบทดสอบ
+                  และเกณฑ์การวัดผลบุคลากร</p>
+            </div>
+
+            <div class="faq-list">
+               <ul>
+                  <li class="faq-list-h" data-aos="fade-up" data-aos-delay="100">
+                     <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">
+                        <b>พีทีเอสมีบริการอะไรบ้าง ?</b>
+                     </a>
+                     <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list">
+                        <p>พีทีเอส มีบริการใน 4 ด้านคือ</p>
+                        <ol>
+                           <li>จำหน่าย สิทธิการใช้แบบทดสอบ ในการประเมินและคัดเลือกผู้สมัครงานและบุคลากรขององค์กร</li>
+                           <li>สร้าง แบบทดสอบ และแบบประเมินต่าง ๆ ตามความต้องการของแต่ละองค์กร</li>
+                           <li>ดำเนินการทดสอบและประเมิน บุคลากรขององค์กรด้วยเครื่องมือต่าง ๆ ของ PTS เช่นแบบทดสอบ
+                              การสัมภาษณ์แบบ EBI, เครื่องมือ Online Multi-Rater Rating แบบ 360° หรือ 180° และ Assessment
+                              Workshops</li>
+                           <li>พัฒนาประสิทธิภาพบุคลากร ด้วย (1) หลักสูตรที่จัดทำขึ้นตาม Career Goal, จุดแข็ง และจุดอ่อน
+                              ตามผลการทดสอบของ PTS, ผลการสำรวจตนเอง และ IDP ของผู้รับ การพัฒนาแต่ละคน
+                              และต่ละกลุ่มบุคคลที่มี IDP คล้ายกัน (2) วิธีการพัฒนาที่หลากหลาย เช่น Individual and Group
+                              Coaching, Experiential Active Learning, Case-Based Learning, Prject-Based Learning, etc.
+                           </li>
+                        </ol>
+                     </div>
+                  </li>
+
+                  <li class="faq-list-h" data-aos="fade-up" data-aos-delay="100">
+                     <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-2">
+                        <b>ระบบทดสอบบุคลากรของพีทีเอส มีความปลอดภัยแค่ไหน ?</b>
+                     </a>
+                     <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                        <p>PTS มีความปลอดภัยระดับสูง เนื่องจาก</p>
+                        <ol>
+                           <li>ระบบทดสอบ PTS สอบผ่านระบบคอมพิวเตอร์ บางแบบมีหลายชุดใช้สลับกัน และ License, Pass Codes,
+                              และ
+                              Key ของคำตอบต่าง ๆ ได้ถูกเข้ารหัสในโปรแกรมอย่างปลอดภัย</li>
+                           <li>จำหน่ายแบบ B to B แต่ละองค์กรที่ซื้อสิทธิการใช้บริการของ PTS ต่างต้องรักษาสิทธิของตนเอง
+                           </li>
+                           <li>PTS ไม่มีขายในท้องตลาด ไม่ใช้ในการจัดอบรม และไม่มีให้ใช้สอนตามสถาบันการศึกษา</li>
+                        </ol>
+                     </div>
+                  </li>
+
+                  <li class="faq-list-h" data-aos="fade-up" data-aos-delay="100">
+                     <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-3">
+                        <b>แบบทดสอบพีทีเอส สร้างจากทฤษฎีของใคร มีอะไรอ้างอิง</b>
+                     </a>
+                     <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                        <p>แบบทดสอบพีทีเอส สร้างตามนิยามและโครงสร้างของลักษณะนิสัย ทัศนคติ ค่านิยม ความชอบ และสมรรถนะ
+                           ต่าง ๆ ของบุคคลที่ต้องการวัด อย่างถูกต้องและตรงประเด็น และแปลความหมายได้อย่างชัดเจน
+                           หัวข้อต่าง ๆ ที่แบบทดสอบพีทีเอสทดสอบ จึงมีอย่างหลากหลาย เพื่อให้สามารถเลือกใช้ได้อย่างตรงตาม
+                           Values และ Competencies ขององค์กรต่าง ๆ ทั้งที่เป็นแบบ Core และแบบ Functional</p>
+                        <ol>
+                           <li>PTS สร้างตามหลักการวัดและประเมินทางจิตวิทยา ซึ่งมีชื่อเรียกทางวิชาการว่า Psychometrics
+                              หรือจิตมิติ เพื่อให้มีค่าความเที่ยง (Reliability) และค่าความแม่นยำ (Validity) ในระดับสูง
+                           </li>
+                           <li>PTS สร้างตาม Personal Attributes และ Competencies ต่าง ๆ ของบุคคล
+                              ตามความต้องการขององค์กรต่าง ๆ อย่างถูกต้อง เจาะจง และแปลความหมายได้อย่างชัดเจนตรงประเด็น
+                           </li>
+                           <li>Norms ของ PTS มาจากกลุ่มผู้สมัครงานที่แข่งขันกัน ในสถานการณ์ที่มีเดิมพันสูง (High Stake
+                              Situations) จึงเหมาะสำหรับใช้ในการทดสอบเพื่อการคัดเลือก</li>
+                        </ol>
+                     </div>
+                  </li>
+
+                  <li class="faq-list-h" data-aos="fade-up" data-aos-delay="100">
+                     <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-4">
+                        <b>แบบทดสอบสามารถวัดผลได้ 100% หรือไม่ ?</b>
+                     </a>
+                     <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                        <p></p>
+                        <ol>
+                           <li>ไม่มีแบบทดสอบใดที่สามารถวัดผลได้อย่างถูกต้อง 100%</li>
+                           <li>แต่ PTS ได้ดำเนินการตาม 6 มาตรการ ในการสร้างระบบการทดสอบ
+                              จึงมีความถูกต้องและเชื่อถือได้สูง ดังนี้
+                              <ol>
+                                 <li>ดำเนินการสร้างแบบทดสอบตามหลัก Psychometrics อย่างเคร่งครัด และคัดเลือกข้อ
+                                    และการรวมกลุ่มของข้อ อย่างละเอียดรอบคอบ เพื่อไห้มี Reliability
+                                    อยู่ในระดับสูงมากที่สุดเท่าที่สามารถจะทำได้</li>
+                                 <li>อ้างอิงกลุ่มตัวอย่างที่เป็นพนักงานจริง และผู้สมัครงานจริงในแต่ละสายงาน</li>
+                                 <li>สร้างโจทย์ และข้อคำถามต่าง ๆ ที่สะท้อนสภาพการทำงานจริง</li>
+                                 <li>เขียนคำสั่งอย่างชัดเจนและเข้าใจง่าย เพื่อให้ผู้รับการทดสอบทำตามได้อย่างถูกต้อง
+                                    ไม่คลุมเครือ และมีการเตือนให้ตอบอย่างถูกต้อง และรอบคอบ</li>
+                                 <li>มีการตรวจสอบคำตอบของผู้รับการทดสอบ ก่อนที่จะดำเนินการประมวลผล คำตอบส่วนใดที่พบว่า
+                                    หรือสงสัยว่าเชื่อถือไม่ได้ ก็จะปรากฏในรายงานผล
+                                    และแนะนำสิ่งที่องค์กรควรทำต่อผู้รับการทดสอบที่ตอบอย่างเชื่อถือไม่ได้
+                                    เช่นการสัมภาษณ์เจาะลึกเพิ่มเติม ให้สอบใหม่ หรือตัดสินไม่ให้ผ่าน</li>
+                                 <li>รายงานผลการทดสอบเป็นคะแนน และกราฟ พร้อมคำอธิบายอย่างกระชับ ชัดเจน เข้าใจง่าย
+                                    และเข้าใจตรงกัน อย่างถูกต้อง ตรงประเด็น ไม่จำเป็นต้องอาศัยผู้เชี่ยวชาญมาแปลผลอีก
+                                    ทำให้สามารถลดความคลาดเคลื่อนในการอ่านรายงานผลได้มาก</li>
+                              </ol>
+                           </li>
+                           <li>แบบทดสอบของ PTS หากนำไปใช้อย่างถูกต้อง จะช่วยลด Human Errors ในการประเมินได้มาก
+                              และถ้าหากใช้ร่วมกับเครื่องมืออื่น ๆ เช่น การสัมภาษณ์แบบ EBI, เครื่องมือ Multi-Rater Rating
+                              แบบ 360° หรือ 180° และ Assessment Workshops
+                              ก็จะสามารถลดความผิดพลาดในการประเมินได้มากขึ้นอีก</li>
+                        </ol>
+                     </div>
+                  </li>
+
+                  <li class="faq-list-h" data-aos="fade-up" data-aos-delay="100">
+                     <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-5">
+                        <b>ถ้าผู้สมัครงานบางรายเคยทำแบบทดสอบพีทีเอส มาแล้ว จากหน่วยงานเดิม
+                           หากมาทำอีกครั้งจะเกิดผลอะไรบ้าง ?</b>
+                     </a>
+                     <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                        <p></p>
+                        <ol>
+                           <li>แต่ละบริษัทจะมีเกณฑ์ในการคัดเลือกพนักงานไม่เหมือนกัน
+                              ขึ้นอยู่กับนโยบายและเกณฑ์เกี่ยวกับค่านิยม ลักษณะบุคลิกภาพ และสมรรถนะต่าง ๆ
+                              ที่ต้องการสำหรับแต่ละตำแหน่งงาน <br>
+                              แม้ในตำแหน่งงานเดียวกัน แต่ละบริษัทก็อาจมีเกณฑ์ที่แตกต่าง เช่นบริษัท ก.
+                              ต้องการคนที่มีบุคลิกภาพความเป็นผู้นำสูง แต่บริษัท ข. กลับต้องการคนที่มีความซื่อสัตย์สูง
+                              ดังนั้นแม้ว่าผู้สมัครงานรายนี้จะเคยทำแบบทดสอบชุดนี้มาแล้วจากหน่วยงานเดิม
+                              ก็สามารถให้ทำใหม่ได้</li>
+                           <li>ผู้สมัครงานที่เคยทำแบบทดสอบมาแล้ว ส่วนใหญ่ไม่ทราบถึงผลของการทดสอบ
+                              และไม่ทราบถึงคำตอบที่ถูกต้องเป็นอย่างไร จึงไม่มีผลในการวิเคราะห์ผลของการทำแบบทดสอบ</li>
+                        </ol>
+                     </div>
+                  </li>
+
+               </ul>
+            </div>
+
+         </div>
+      </section><!-- End Frequently Asked Questions Section -->
+
+      <!-- ======= Services Section ======= -->
+      <style>
+
+      </style>
+      <section id="services" class="services">
+         <div class="container" data-aos="fade-up">
+            <div class="section-title">
+               <h2>Services</h2>
+            </div>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+               consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+               sit
+               in iste officiis commodi quidem hic quas.</p>
+         </div>
+         <div class="container-fluid" data-aos="fade-up">
+            <div class="row g-3">
+               <div class="col-lg-2" data-aos="zoom-in" onclick="showModalProduct('Psychometrics1')">
+                  <div class="icon-box">
+                     <img src="assets/img/clients/1.png"><br>
+                     <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, aliquid.</p>
+                     <p class="text-end mt-4"><b>เพิ่มเติม</b></p>
+                  </div>
+               </div>
+               <div class="col-lg-2" data-aos="zoom-in" onclick="showModalProduct('ABA1')">
+                  <div class="icon-box">
+                     <img src="assets/img/clients/2.png"><br>
+                     <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, aliquid.</p>
+                     <p class="text-end mt-4"><b>เพิ่มเติม</b></p>
+                  </div>
+               </div>
+
+               <div class="col-lg-2" data-aos="zoom-in" onclick="showModalProduct('Structural')">
+                  <div class="icon-box">
+                     <img src="assets/img/clients/3.png"><br>
+                     <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, aliquid.</p>
+                     <p class="text-end mt-4"><b>เพิ่มเติม</b></p>
+                  </div>
+               </div>
+
+               <div class="col-lg-2" data-aos="zoom-in" onclick="showModalProduct('360')">
+                  <div class="icon-box">
+                     <img src="assets/img/clients/4.png"><br>
+                     <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, aliquid.</p>
+                     <p class="text-end mt-4"><b>เพิ่มเติม</b></p>
+                  </div>
+               </div>
+
+               <div class="col-lg-2" data-aos="zoom-in" onclick="showModalProduct('none')">
+                  <div class="icon-box">
+                     <img src="assets/img/clients/5.png"><br>
+                     <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, aliquid.</p>
+                     <p class="text-end mt-4"><b>เพิ่มเติม</b></p>
+                  </div>
+               </div>
+
+               <div class="col-lg-2" data-aos="zoom-in" onclick="showModalProduct('Engagement')">
+                  <div class="icon-box">
+                     <img src="assets/img/clients/6.png"><br>
+                     <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, aliquid.</p>
+                     <p class="text-end mt-4"><b>เพิ่มเติม</b></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section><!-- End Services Section -->
+
+      <!-- ======= Team Section ======= -->
+      <section id="team" class="team section-bg">
+         <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+               <h2>About</h2>
+               <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+                  sint
+                  consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                  Quia fugiat sit
+                  in iste officiis commodi quidem hic quas.</p>
+            </div>
+
+            <div class="row">
+
+               <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="member d-flex align-items-start">
+                     <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+                     <div class="member-info">
+                        <h4>Walter White</h4>
+                        <span>Chief Executive Officer</span>
+                        <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                        <div class="social">
+                           <a href=""><i class="ri-twitter-fill"></i></a>
+                           <a href=""><i class="ri-facebook-fill"></i></a>
+                           <a href=""><i class="ri-instagram-fill"></i></a>
+                           <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="member d-flex align-items-start">
+                     <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+                     <div class="member-info">
+                        <h4>Sarah Jhonson</h4>
+                        <span>Product Manager</span>
+                        <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                        <div class="social">
+                           <a href=""><i class="ri-twitter-fill"></i></a>
+                           <a href=""><i class="ri-facebook-fill"></i></a>
+                           <a href=""><i class="ri-instagram-fill"></i></a>
+                           <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="member d-flex align-items-start">
+                     <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+                     <div class="member-info">
+                        <h4>William Anderson</h4>
+                        <span>CTO</span>
+                        <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                        <div class="social">
+                           <a href=""><i class="ri-twitter-fill"></i></a>
+                           <a href=""><i class="ri-facebook-fill"></i></a>
+                           <a href=""><i class="ri-instagram-fill"></i></a>
+                           <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="member d-flex align-items-start">
+                     <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+                     <div class="member-info">
+                        <h4>Amanda Jepson</h4>
+                        <span>Accountant</span>
+                        <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                        <div class="social">
+                           <a href=""><i class="ri-twitter-fill"></i></a>
+                           <a href=""><i class="ri-facebook-fill"></i></a>
+                           <a href=""><i class="ri-instagram-fill"></i></a>
+                           <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+      </section><!-- End Team Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+         <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+               <h2>Contact</h2>
+               <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+                  sint
+                  consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                  Quia fugiat sit
+                  in iste officiis commodi quidem hic quas.</p> -->
+            </div>
+
+            <div class="row">
+
+               <div class="col-lg-5 d-flex align-items-stretch">
+                  <div class="info">
+                     <div class="address">
+                        <i class="bi bi-geo-alt"></i>
+                        <h4>Location:</h4>
+                        <p>บริษัท อบรมและทดสอบ พีทีเอส จำกัด <br>
+                           128/383 ชั้น 35 อาคารพญาไทพลาซ่า <br>
+                           ถนนพญาไท แขวงทุ่งพญาไท <br>
+                           เขตราชเทวี กรุงเทพฯ 10400</p>
+                     </div>
+
+                     <div class="email">
+                        <i class="bi bi-envelope"></i>
+                        <h4>Email:</h4>
+                        <p>sales@ptstesting.com</p>
+                     </div>
+
+                     <div class="phone">
+                        <i class="bi bi-phone"></i>
+                        <h4>Call:</h4>
+                        <p>02-219-2113</p>
+                     </div>
+
+                     <div class="map">
+                        <i class="bi bi-map"></i>
+                        <h4>Map:</h4>
+                        <p class="my-3"><a href="assets/img/ptsmap.png" target="_blank">แผนที่ บริษัท อบรมและทดสอบ พีทีเอส จำกัด</a></p>
+                        <iframe
+                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.3728897147325!2d100.53015021447125!3d13.75637239034449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29eca60e82b5f%3A0xdb3fb97251788cfa!2sPTS+Training+%26+Testing+Co.%2C+Ltd.!5e0!3m2!1sth!2sth!4v1503467473174"
+                           frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen>
+                        </iframe>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                  <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                     <div class="row">
+                        <div class="form-group col-md-6">
+                           <label for="name">Your Name</label>
+                           <input type="text" name="name" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                           <label for="name">Your Email</label>
+                           <input type="email" class="form-control" name="email" id="email" required>
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <label for="name">Subject</label>
+                        <input type="text" class="form-control" name="subject" id="subject" required>
+                     </div>
+                     <div class="form-group">
+                        <label for="name">Message</label>
+                        <textarea class="form-control" name="message" rows="10" required></textarea>
+                     </div>
+                     <div class="my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                     </div>
+                     <div class="text-center"><button type="submit">Send Message</button></div>
+                  </form>
+               </div>
+
+            </div>
+
+         </div>
+      </section><!-- End Contact Section -->
+
+   </main><!-- End #main -->
+
+   <!-- ======= Footer ======= -->
+   <footer id="footer">
+
+      <div class="footer-newsletter section-bg">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-lg-6">
+                  <h4>Join Our Newsletter</h4>
+                  <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                  <form action="" method="post">
+                     <input type="email" name="email"><input type="submit" value="Subscribe">
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="footer-top">
+         <div class="container">
+            <div class="row">
+
+               <div class="col-lg-3 col-md-6 footer-contact">
+                  <h3>PTS</h3>
+                  <p>บริษัท อบรมและทดสอบ พีทีเอส จำกัด <br>
+                     128/383 ชั้น 35 อาคารพญาไทพลาซ่า <br>
+                     ถนนพญาไท แขวงทุ่งพญาไท <br>
+                     เขตราชเทวี กรุงเทพฯ 10400 <br><br>
+                     <strong>Phone:</strong> 02-219-2113<br>
+                     <strong>Email:</strong> sales@ptstesting.com<br>
+                  </p>
+               </div>
+
+               <div class="col-lg-3 col-md-6 footer-links">
+                  <h4>Useful Links</h4>
+                  <ul>
+                     <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                     <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                     <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                     <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                     <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                  </ul>
+               </div>
+
+               <div class="col-lg-3 col-md-6 footer-links">
+                  <h4>Our Services</h4>
+                  <ul>
+                     <li><i class="bx bx-chevron-right"></i> <a href="#">PTS Psychometrice</a></li>
+                     <li><i class="bx bx-chevron-right"></i> <a href="#">PTS Assessment</a></li>
+                     <li><i class="bx bx-chevron-right"></i> <a href="#">PTS Structural</a></li>
+                     <li><i class="bx bx-chevron-right"></i> <a href="#">PTS Online 360°</a></li>
+                     <li><i class="bx bx-chevron-right"></i> <a href="#">PTS Engagement</a></li>
+                     <li><i class="bx bx-chevron-right"></i> <a href="#">PTS Development</a></li>
+                  </ul>
+               </div>
+
+               <div class="col-lg-3 col-md-6 footer-links">
+                  <h4>Our Social Networks</h4>
+                  <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                  <div class="social-links mt-3">
+                     <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                     <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                     <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                     <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                     <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+      <div class="footer-bottom container clearfix">
+         <div class="copyright">
+            &copy; Copyright <strong><span>PTS</span></strong>. All Rights Reserved
+         </div>
+         <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+         </div>
+      </div>
+   </footer><!-- End Footer -->
+
+   <div id="preloader"></div>
+   <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+      <i class="bi bi-arrow-up-short"></i>
+   </a>
+
+   <!-- Modal Test List -->
+   <div class="modal fade" id="mdTestList" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+         <div class="modal-content">
+            <div class="modal-header">
+               <b><span id="md-list-name"></span></b>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="md-list" style="font-size:11pt;"></div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Modal Vdo Development -->
+   <div class="modal fade" id="mdVdoDev" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+         <div class="modal-content">
+            <div class="modal-header">
+               <b><span id="md-VdoDev-name"></span></b>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="md-VdoDev" style="font-size:11pt;"></div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Modal Product -->
+   <div class="modal fade" id="mdProduct" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+         <div class="modal-content">
+            <div class="modal-header">
+               <b><span id="md-NameProduct"></span></b>
+               <div>
+                  <button id="swProduct" class="btn btn-primary" onclick="showModalProduct(this.value)"
+                     value=""></button>
+                  <button class="btn btn-success">Download PDF</button>
+                  <button class="btn btn-secondary" data-bs-dismiss="modal">กลับหน้าหลัก</button>
+               </div>
+            </div>
+            <div class="modal-body section-bg">
+               <div class="container text-center" id="md-ContentProduct"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Vendor JS Files -->
+   <script src="assets/vendor/aos/aos.js"></script>
+   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+   <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
+   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+   <!-- <script src="assets/vendor/waypoints/noframework.waypoints.js"></script> -->
+   <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script> -->
+
+   <!-- Template Main JS File -->
+   <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+
+<script src="script-test-list.js"></script>
+
+<script>
+
+   function showModalVdoDev(vdoDev) {
+      var vdoDevName;
+      var vdoDevContent;
+
+      if (vdoDev == 1) {
+         vdoDevName = "ชุดที่ 1: Managerial Leadership มี 5 ตอน ๆ ละ 45-60 นาที";
+         vdoDevContent = `
+         <div class="alert alert-success border-0" role="alert">
+            <strong>ตอนที่ 1:</strong> MBO และการบริหารการปฏิบัติงาน MBO and Performance Management
+         </div>
+         <div class="alert alert-success border-0" role="alert">
+            <strong>ตอนที่ 2:</strong> การนำการเปลี่ยนแปลง Change Leadership
+         </div>
+         <div class="alert alert-success border-0" role="alert">
+            <strong>ตอนที่ 3:</strong> การแก้ปัญหาและการตัดสินใจ Problem Solving and Decision Making
+         </div>
+         <div class="alert alert-success border-0" role="alert">
+            <strong>ตอนที่ 4:</strong> การสร้างความผูกพันและพลังการทำงาน Employee Empowerment and Engagement
+         </div>
+         <div class="alert alert-success border-0" role="alert">
+            <strong>ตอนที่ 5:</strong> การบ่มเพาะความคิดสร้างสรรค์และนวัตกรรม Fostering Creativity and Innovation
+         </div>
+         `;
+      }
+      else if (vdoDev == 2) {
+         vdoDevName = "ชุดที่ 2: Managerial Effectiveness มี 5 ตอน ๆ ละ 45-55 นาที";
+         vdoDevContent = `
+         <div class="alert alert-success border-0" role="alert">
+            <strong>ตอนที่ 1:</strong> การสร้างความไว้วางใจและมุ่งสู่เป้าหมายเดียวกัน How to Win the Trust and Align the Efforts
+         </div>
+         <div class="alert alert-success border-0" role="alert">
+            <strong>ตอนที่ 2:</strong> การนำทางและทำให้ทีมผูกพันกับงาน How to Lead the Way and Engage the Team
+         </div>
+         <div class="alert alert-success border-0" role="alert">
+            <strong>ตอนที่ 3:</strong> การบริหารการปฏิบัติงานและและแก้ไขปัญหา How to Manage Performance and Solve Problems
+         </div>
+         <div class="alert alert-success border-0" role="alert">
+            <strong>ตอนที่ 4:</strong> การเป็นผู้นำแบบจุดประกายความคิดและประสานประโยชน์ How to Lead and Synergize in a Win-Win Way
+         </div>
+         <div class="alert alert-success border-0" role="alert">
+            <strong>ตอนที่ 5:</strong> การพัฒนาตนเองและผู้ร่วมทีมงาน How to Develop Yourself and Your People
+         </div>
+         `;
+      }
+      else if (vdoDev == 3) {
+         vdoDevName = "ชุดที่ 3: Supervisory Effectiveness มี 5 ตอน ๆ ละ 40-45 นาที";
+         vdoDevContent = `
+         <div class="alert alert-success border-0" role="alert">
+            <strong>ตอนที่ 1:</strong> การสร้างความยอมรับ How to Win Acceptance as Supervisor
+         </div>
+         <div class="alert alert-success border-0" role="alert">
+            <strong>ตอนที่ 2:</strong> การนำและบังคับบัญชา How to Lead and Supervise Your People
+         </div>
+         <div class="alert alert-success border-0" role="alert">
+            <strong>ตอนที่ 3:</strong> การวางแผนและมอบหมายงาน How to Plan and Delegate Work
+         </div>
+         <div class="alert alert-success border-0" role="alert">
+            <strong>ตอนที่ 4:</strong> แรงจูงใจและวินัยการทำงาน How to Motivate and Build Discipline
+         </div>
+         <div class="alert alert-success border-0" role="alert">
+            <strong>ตอนที่ 5:</strong> การพัฒนาผู้ใต้บังคับบัญชา How to Develop Your Subordinates
+         </div>
+         `;
+      }
+
+      document.getElementById("md-VdoDev-name").innerHTML = vdoDevName;
+      document.getElementById("md-VdoDev").innerHTML = vdoDevContent;
+      new bootstrap.Modal(document.getElementById('mdVdoDev')).show();
+      return false;
+   }
+
+   function showModalTestList(listName) {
+      document.getElementById("md-list-name").innerHTML = mdTestLest_h[listName];
+      document.getElementById("md-list").innerHTML = mdTestLest[listName];
+      new bootstrap.Modal(document.getElementById('mdTestList')).show();
+      return false;
+   }
+
+   var md = new bootstrap.Modal(document.getElementById('mdProduct'));
+   var swProduct = document.getElementById('swProduct');
+   function showModalProduct(product) {
+      document.getElementById("md-NameProduct").innerHTML = '';
+      document.getElementById("md-ContentProduct").innerHTML = '<img src="assets/img/pts-products/' + product + '.png" style="width:100%; max-width:800px;">';
+      swProduct.style.display = "none";
+
+      if (product == 'Psychometrics1') {
+         swProduct.style.display = "inline";
+         swProduct.innerText = "Go to PTS Adaptive";
+         swProduct.value = "Psychometrics2";
+      }
+      else if (product == 'Psychometrics2') {
+         swProduct.style.display = "inline";
+         swProduct.innerText = "Go to PTS Profile Matching";
+         swProduct.value = "Psychometrics1";
+      }
+
+      if (product == 'ABA1') {
+         swProduct.style.display = "inline";
+         swProduct.innerText = "Go to The PTS Assessment Center";
+         swProduct.value = "ABA2";
+      }
+      else if (product == 'ABA2') {
+         swProduct.style.display = "inline";
+         swProduct.innerText = "Go to PTS ABA";
+         swProduct.value = "ABA1";
+      }
+
+
+      if (!md._isShown) md.show();
+   }
+
+   function openPDF(pdf) {
+      window.open('assets/img/pdf/' + pdf + '.pdf');
+      return false;
+   }
+</script>
